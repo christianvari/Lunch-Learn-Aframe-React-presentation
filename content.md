@@ -1,10 +1,10 @@
 <!-- .slide: data-background="media/img/aframe.jpg" -->
 
 <div class="talk-title">
-  <h1>A-Frame</h1>
-  <p>A web framework for building VR experiences</p>
+  <h1>A-Frame & React</h1>
+  <p>A smooth VR web app development experience</p>
   <p class="talk-info">
-    @andgokevin | Mozilla VR | **aframe.io**
+    @christianvari | HCL Software
   </p>
 </div>
 
@@ -178,15 +178,39 @@ https://webvr.rocks
 ---
 
 ## Metaverse
+So... Let's start a new project!
+
+<!-- .slide: data-background="media/img/metaverse.jpg" -->
+
+
+
+---
+
+## Metaverse
+- Shared persistent collective virtual spaces
+- Alternate digital reality that the world may live, work, play
+- Must be decentralized/open/connected, the Web is best platform to fully realize
+
+<!-- .slide: data-background="media/img/metaverse.jpg" -->
+
+
+---
+
+## Metaverse
+ Where do we begin?
+
+The best solution that we have at the moment is three.js.<br/>
+This js library abstracts WebGL, 3D, and WebVR, but is not so developer friendly...
+
 
 <!-- .slide: data-background="media/img/metaverse.jpg" -->
 
 <!-- NOTES -->
-- Shared persistent collective virtual spaces
-- Alternate digital reality that the world may live, work, play
-- Must be decentralized/open/connected, the Web is best platform to fully realize
-- Where do we begin?
-- three.js abstracts WebGL, 3D, and WebVR, but could still make it more accessible
+
+- Quaternions for rotations
+- Render loop optimizations
+- Requires a lot of geometry knowdoleges
+- Need to manually apply a logaritmic lens distorption
 
 ---
 
@@ -438,6 +462,7 @@ A web framework for building virtual reality experiences
 <!-- .slide: data-background-color="#333" -->
 
 Curated collection of A-Frame components.
+https://aframe.io/aframe-registry/
 
 <a class="stretch" href="https://aframe.io/aframe-registry">
   <video loop data-src="media/video/registrypreview.mp4" data-autoplay></video>
@@ -449,17 +474,6 @@ Curated collection of A-Frame components.
 - People can browse and search for components or install them....
 
 ---
-
-# Registry
-
-<!-- .slide: data-background-color="#333" -->
-
-Curated collection of A-Frame components.
-
-<video loop data-src="media/video/leaphands.mp4" data-autoplay></video>
-
----
-
 ## Inspector
 
 <!-- .slide: data-background="media/img/inspector.png" data-state="state--bg-dark" -->
@@ -484,13 +498,6 @@ https://aframe.io/blog/
 
 @mozillavr
 
----
-
-<!-- .slide: data-background="media/img/syria.gif" -->
-
-# Journalism - *Fear of the Sky*
-
-Amnesty International UK
 
 ---
 
@@ -518,21 +525,6 @@ The Washington Post
 
 ---
 
-<!-- .slide: data-background="media/img/a-blast.gif" -->
-
-# Gaming - *A-Blast*
-
-@mozillavr
-
----
-
-<!-- .slide: data-background="media/img/ux.gif" -->
-
-# Prototyping - *UI Widgets*
-
-@whoyee
-
----
 
 <!-- .slide: data-background="media/img/math.gif" -->
 
@@ -540,21 +532,6 @@ The Washington Post
 
 @sleighdogs
 
----
-
-<!-- .slide: data-background="media/img/ar.gif" -->
-
-# AR - *AR.js + A-Frame*
-
-@jerome_etienne
-
----
-
-<!-- .slide: data-background="media/img/webvrstudio.png" -->
-
-# Tools - *WebVR Studio*
-
-@webvrstudio
 
 ---
 
@@ -596,3 +573,13 @@ iStaging
 - Most work done on GitHub
 - Active community on Slack to share projects, interact, hang out, seek help
 - Featured projects on the `awesome-aframe` repository and *A Week of A-Frame* blog
+
+------
+
+<!-- .slide: data-background="media/img/react.png" -->
+
+# React
+Create complex and scalable A-frame applications
+
+<!-- NOTES -->
+- Barboni previous talk
