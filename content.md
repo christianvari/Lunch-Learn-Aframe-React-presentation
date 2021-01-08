@@ -583,3 +583,20 @@ Create complex and scalable A-frame applications
 
 <!-- NOTES -->
 - Barboni previous talk
+
+---
+
+## Why react?
+
+<!-- .slide:  data-state="state--bg-white" -->
+
+<div class="captioned-image-row">
+  <div>
+    <img data-src="media/img/whyReact.png">
+  </div>
+</div>
+
+<!-- NOTES -->
+- Virtual DOM optimizations
+- Ability to create components and groups and reuse them
+- Developers already knows react
