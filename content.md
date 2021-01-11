@@ -2,7 +2,7 @@
 
 <div class="talk-title">
   <h1>A-Frame & React</h1>
-  <p>A smooth VR web app development experience</p>
+  <p>A smooth VR app development experience</p>
   <p class="talk-info">
     @christianvari | HCL Software
   </p>
