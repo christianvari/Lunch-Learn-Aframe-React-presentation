@@ -351,7 +351,7 @@ A web framework for building virtual reality experiences
 
 ## Entity-Component-System
 
-<!-- .slide: data-background="media/img/minecraft-blocks.png" -->
+<!-- .slide: data-background-color="#222222" -->
 
 - **Entities** are container objects into which components can be attached. Entities are the base of all objects in the scene. Without components, entities neither do nor render anything, similar to an empty div.
 - **Components** are reusable modules or data containers that can be attached to entities to provide appearance, behavior, and/or functionality.
