@@ -341,6 +341,26 @@ A web framework for building virtual reality experiences
 
 ---
 
+## Entity-Component-System
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" -->
+
+- **Entities** are container objects into which components can be attached. Entities are the base of all objects in the scene. Without components, entities neither do nor render anything, similar to an empty div.
+- **Components** are reusable modules or data containers that can be attached to entities to provide appearance, behavior, and/or functionality.
+- **Systems** provide global scope, management, and services for classes of components.
+
+<!-- NOTES -->
+- is a common and desirable pattern in 3D and game development that follows the composition over inheritance and hierarchy principle.
+- Greater flexibility when defining objects by mixing and matching reusable parts.
+- Eliminates the problems of long inheritance chains with complex interwoven functionality.
+- Promotes clean design via decoupling, encapsulation, modularization, reusability.
+- Most scalable way to build a VR application in terms of complexity.
+- Proven architecture for 3D and VR development.
+- Allows for extending new features (possibly sharing them as community components).
+
+
+---
+
 <!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="slide-in none" -->
 
 ## Composing an Entity
