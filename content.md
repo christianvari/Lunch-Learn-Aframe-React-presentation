@@ -70,9 +70,9 @@
 
 ------
 
-# WebVR
+# WebXR
 
-An open virtual reality platform with the advantages of **the Web**
+An open VR/AR platform for **the Web**
 
 <div class="captioned-image-row">
   <div>
@@ -112,12 +112,11 @@ Transition:
 
 ---
 
-<img class="stretch" data-src="media/img/webvr.png">
+<img class="stretch" data-src="media/img/webxr-logo.svg">
 
-Browser APIs that enable WebGL rendering to headsets and access to VR
-sensors
+Browser APIs that enable WebGL rendering to headsets and access to VR/AR sensors
 
-https://w3c.github.io/webvr/
+https://www.w3.org/TR/webxr/
 
 <!-- NOTES -->
 API:
@@ -133,12 +132,12 @@ Not just a specification, it's implemented...
 
 ---
 
-https://webvr.rocks
+https://caniuse.com/webxr
 
 <div class="captioned-image-row small">
   <div>
     <img data-src="media/img/firefox-nightly.png">
-    <i>Firefox Nightly</i>
+    <i>Firefox</i>
   </div>
   <div>
     <img data-src="media/img/edge.jpg">
@@ -281,7 +280,7 @@ A web framework for building virtual reality experiences
 - Drop a script tag, no build steps
 - Using Custom HTML Elements
 - One line of HTML `<a-scene>` handles
-  - canvas, camera, renderer, lights, controls, render loop, WebVR polyfill, VREffect
+- canvas, camera, renderer, lights, controls, render loop, WebVR polyfill, VREffect
 - Put stuff inside our scene...
 
 ---
@@ -477,6 +476,31 @@ A web framework for building virtual reality experiences
 
 ---
 
+# Define a custom component
+
+
+<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+
+```js
+AFRAME.registerComponent('componentName', {
+  schema: {
+    property: {type: 'string', default: ''},
+  },
+
+  init: function () { /* Init fuction */ }
+  update: function () { /* Runs on props changes */ }
+  remove: function () { /* Runs when the component is removed from entity */ }
+  tick: function () { /* Runs each frame (60fps) */ }
+
+
+});
+```
+<!-- .element: class="stretch" -->
+
+<!-- NOTES -->
+
+
+---
 # Registry
 
 <!-- .slide: data-background-color="#333" -->
@@ -529,31 +553,6 @@ The Washington Post
 
 ---
 
-<!-- .slide: data-background="media/img/citybuilder.gif" -->
-
-# Sandbox - *City Builder*
-
-@kfarr
-
----
-
-<!-- .slide: data-background="media/img/adit.gif" -->
-
-# Data Visualization - *Adit*
-
-@datatitian
-
----
-
-
-<!-- .slide: data-background="media/img/math.gif" -->
-
-# Mathematics - *MathworldVR*
-
-@sleighdogs
-
-
----
 
 <!-- .slide: data-background-video="media/video/livetour.mp4" data-background-video-loop="true" -->
 
@@ -606,9 +605,10 @@ Create complex and scalable A-frame applications
 
 ---
 
-## Why react?
+## Why React?
 
 <!-- .slide:  data-state="state--bg-white" -->
+
 
 <div class="captioned-image-row">
   <div>
@@ -620,3 +620,67 @@ Create complex and scalable A-frame applications
 - Virtual DOM optimizations
 - Ability to create components and groups and reuse them
 - Developers already knows react
+
+------
+# HCL and VR
+
+<!-- .slide: data-background="media/img/TVREX.png" -->
+
+<!-- NOTES -->
+- T-VREX
+
+---
+
+## T-VREX
+Troubleshooting Virtual Room EXperience
+
+<div class="captioned-image-row">
+  <div>
+    <img data-src="media/img/TVREX-2.png">
+    <i>Data analytics</i>
+  </div>
+  <div>
+    <img data-src="media/img/TVREX-3.png">
+      <i>Immersive</i>
+  </div>
+  <div>
+    <img data-src="media/img/TVREX-4.png">
+    <i>Connected</i>
+  </div>
+</div>
+
+---
+## VR React Components Library
+<!-- .slide: data-background="media/img/lib.png" -->
+
+---
+## VR React Components Library
+<!-- .slide: data-background="media/img/lib.png" -->
+
+- GUI components (keyboard, buttons, checkbox, table, etc...)
+- Charts components (bar chart, pie chart, topology chart, etc..)
+- A-frame components (objects 3D manipulations, 3D forcegraph, etc..)
+- Controllers compatibility
+- Desktop compatibility
+ 
+---
+## VR React Components Library
+<!-- .slide: data-background="media/img/lib.png"  -->
+
+
+```js
+import React from "react";
+import "aframe";
+import {BarChart} from "vr-react-components";
+
+const App = () => {
+    return (
+        <a-scene>
+            <BarChart data={data} />
+        </a-scene>
+    );
+};
+```
+
+<!-- .element: class="stretch" -->
+
