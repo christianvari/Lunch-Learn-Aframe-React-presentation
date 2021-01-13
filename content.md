@@ -311,6 +311,15 @@ A web framework for building virtual reality experiences
 
 ---
 
+## Hello World
+
+<!-- .slide: data-background="media/img/aframe.jpg" data-transition="fade-in slide-out" -->
+
+<div class="stretch" data-aframe-scene="scenes/hello-world.html"></div>
+
+
+---
+
 ## Hello Metaverse
 
 <i>by Ada Rose Edwards (@lady_ada_king)</i>
@@ -479,7 +488,7 @@ A web framework for building virtual reality experiences
 # Define a custom component
 
 
-<!-- .slide: data-background="media/img/minecraft-blocks.png" data-transition="none" -->
+<!-- .slide: data-background="media/img/minecraft-blocks.png" -->
 
 ```js
 AFRAME.registerComponent('componentName', {
@@ -621,6 +630,14 @@ Create complex and scalable A-frame applications
 - Ability to create components and groups and reuse them
 - Developers already knows react
 
+---
+## Why React?
+
+- Virtual DOM
+- Predictable application structure
+- Mix ECS with React components capabilities
+
+
 ------
 # HCL and VR
 
@@ -681,6 +698,10 @@ const App = () => {
     );
 };
 ```
-
 <!-- .element: class="stretch" -->
+------
+
+# Thanks!
+<!-- .slide: data-background-video="media/video/thanks.mp4" data-background-video-loop="true" data-background-video-muted="true" data-background-color="#000"-->
+Questions?
 
